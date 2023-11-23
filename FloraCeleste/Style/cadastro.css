@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:url("../Img/bgcl.png");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    margin-top: 20%;
+    padding:5vw;
+}
+.box{
+    font-family: cormorant;
+    color: #2c4554;
+    font-size: 25px;
+    background-color: #dbe0e4;
+    padding: 100px;
+    border-radius: 35px;
+    width: 40%;
+    border: 7px solid #687c8e;
+    justify-self: center;
+    margin: auto;
+}
+.logo{
+    width: 45%;
+    height: 45%;
+    margin-top: -50px;
+}
+legend{
+    font-family: cormorant;
+    font-size: 72px;
+    margin-left: 10%;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 8px;
+    color: #2c4554;
+    display:flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: middle;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    display: inline;
+    text-decoration:none ;
+    background: white;
+    border-radius: 15px;
+    outline: none; 
+    font-size: 30px;
+    width: 100%;
+    letter-spacing: 2px;
+    color: #8494A4;
+    font-family: cormorant;
+    width: 100%;
+    padding: 5px;
+}
+.labelinput{/* animação das labels - nessa parte, as labels irão
+    se encaixar dentro dos inputs*/
+position: absolute; /* vai ocupar apenas o elemento dela mesma */
+top: -30px;
+pointer-events: none;/* qualquer lugar que eu clicar dentro
+                do input, ele vai executar a ação */
+transition: 5px;/* transição - para criaçao de efeitos de animação personalizado*/
+}
+
+/*Quando clicar no input eu quero que a label vai para cima
+do input - por isso a ação é no input*/
+#enviar{
+    background-color: #5D6D74;
+    width: 100%;
+    padding: 22px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: cormorant;
+}
+#data_nascimento{
+    border: 4px solid #687c8e;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+#enviar{
+    background-color: #5D6D74;
+    width: 100%;
+    padding: 22px;
+    color: #FFFFFF;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: cormorant;
+}
+@media (max-width: 768px) {
+    .box {
+        padding: 25px; /* Ajustando o padding para telas muito pequenas */
+        width: 85%;
+        font-family: cormorant;
+        color: #2c4554;
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 40%; /* Ajustando a largura da logo para telas menores */
+        margin-top: 0px;
+    }
+
+    .inputUser {
+        font-size: 16px; /* Reduzindo o tamanho do texto do input para telas menores */
+    }
+
+    #enviar {
+        font-size: 16px; /* Reduzindo o tamanho do texto do botão para telas menores */
+    }
+
+}

@@ -1,0 +1,68 @@
+@import url(cab.css);
+@import url(aba.css);
+:root{
+    --bgesc: #191f35;
+    --branco: #ffffff;
+    --preto: #000;
+    --vrd: #2C4554;
+    --cinza: #5D6D74;
+}
+body{
+  background:url("../Img/bgcl.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-family: corm;
+}
+a{
+  text-decoration: none;
+}
+main{
+  padding: 10px;
+}
+@font-face {
+  font-family: corm;
+  src: url(Cormorant-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: fc;
+  src: url("MrDeHaviland-Regular.ttf");
+  size-adjust: 200px;
+}
+footer{
+  background-color: var(--cinza);
+  display: flex;
+  padding: 1vw;
+  text-align: center;
+}
+.lgf{
+  width:80px;
+  height:80px;
+ }
+@media  (max-width: 768px) {
+  .produtoscart{
+    display: block;
+  }
+  .itempag{
+    display: block;
+  }
+  .itemimag{
+    width: 300px;
+    vertical-align: center;
+  }
+  .itemimgpqn{
+    display: inline;
+    margin: auto;
+  }
+  .naval{
+    font-size: 15px;
+  }
+.servimg{
+  width: 350px;
+}
+.servform input{
+  width: 300px;
+}
+.servform {
+  text-align: center;
+}
+}

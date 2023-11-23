@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>FloraCeleste - Cadastro</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./Style/reset.css">
+        <link rel="stylesheet" href="./Style/cadastro.css">   
+        <link rel="shortcut icon" href="./Img/logo.ico" type="image/x-icon">
+    </head>
+    <body>
+
+        <main><!--Meio-->
+            <section class="box">
+                <form action="login.html">
+                    <fieldset action="index.html">
+                        <legend>Cadastro<img src="Img/logoesc.svg" class="logo" ></legend>
+                        <br>
+                        <br>
+                        <section class="inputBox">
+                            <input type="text" name="email" id="email"class="inputUser" required>
+                            <label for="email" class="labelinput">E-mail:</label>
+                        </section>
+                        <br>
+                        <br>
+                        <section class="inputBox">
+                            <input type="tel" name="numero" id="numero"class="inputUser" required>
+                            <label for="numero" class="labelinput">Número de Telefone:</label>
+                        </section>
+                        <br><br>
+                        <section class="inputBox">
+                            <input type="password" name="senha"  id="senha" class="inputUser" required>
+                            <label for="senha" class="labelinput">Senha:</label>
+                        </section>
+                        <br><br>
+                        <p>Sexo:</p>
+                        <br>
+                        <input type="radio" id="feminino" name="genero" value="feminino" class="sexo">
+                        <label for="feminino">Feminino</label>
+                        <br>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+                        <br><br>
+                        <label for="data_nascimento"><p>Ano de Nascimento</label>
+                            <input type="date" name="data_nascimento" id="data_nascimento" required>
+                            <br><br>
+                            <input type="submit" value="Cadastro" id="enviar" required>
+                    </fieldset>
+                </form>        
+            </section>
+        </main>
+    </body>
+</html>

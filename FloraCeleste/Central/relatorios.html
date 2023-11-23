@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FloraCENTRAL - Relatórios</title>
+        <link rel="stylesheet" href="../Style/reset.css">
+        <link rel="stylesheet" href="../Style/style.css">
+        <link rel="shortcut icon" href="../Img/logo.ico" type="image/x-icon">
+        <style>
+            .central{
+                width: 50%;
+                margin: 2vw;
+                font-size: 20px;
+                font-weight: bolder;
+                text-align: justify;
+            }
+            .grafico {
+                width: 300px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .barra {
+                height: 30px;
+                margin-bottom: 5px;
+            }
+            .legenda {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body class="adm">
+        <header class="cab">
+            <div class="vrd">
+                <a href="../index.html"><img src="../Img/logo.svg" class="lg"></a>
+            </div>
+        </header>
+        <main>
+            <div style="display: flex;">
+                <div class="central">Principais Vendas de Flores por Tipo nessa Semana:
+                    <div class="grafico">
+                        <div class="barra" style="width: 80%;background-color: var(--vrd);"></div>
+                        <div class="barra" style="width: 60%; background-color: #398635;"></div>
+                        <div class="barra" style="width: 40%; background-color: #4b157a;"></div>
+                        <div class="barra" style="width: 20%; background-color: #7a1515;"></div>
+                    </div>
+                    <div class="legenda">
+                        <div style="color: var(--vrd);"> Rosas</div>
+                        <div style="color: #398635;"> Orquídeas</div>
+                        <div style="color: #4b157a;">Lírios</div>
+                        <div style="color: #7a1515;">Girassóis</div>
+                    </div>
+                </div>
+                <div class="central">Vendas por Estação:
+                    <div class="grafico">
+                        <div class="barra" style="width: 90%;background-color: var(--vrd);"></div>
+                        <div class="barra" style="width: 40%; background-color: #398635;"></div>
+                        <div class="barra" style="width: 65%; background-color: #4b157a;"></div>
+                        <div class="barra" style="width: 30%; background-color: #7a1515;"></div>
+                    </div>
+                    <div class="legenda">
+                        <div style="color: var(--vrd);">Primavera</div>
+                        <div style="color: #398635;">Verão</div>
+                        <div style="color: #4b157a;">Inverno</div>
+                        <div style="color: #7a1515;">Outono</div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="central"> Avaliações dos Clientes
+                    <div class="grafico">
+                        <div class="barra" style="width: 70%;background-color: var(--vrd);"></div>
+                        <div class="barra" style="width: 90%; background-color: #398635;"></div>
+                        <div class="barra" style="width: 20%; background-color: #4b157a;"></div>
+                        <div class="barra" style="width: 5%; background-color: #7a1515;"></div>
+                    </div>
+                    <div class="legenda">
+                        <div style="color: var(--vrd);">5 Estrelas</div>
+                        <div style="color: #398635;">4 Estrelas</div>
+                        <div style="color: #4b157a;">3 Estrelas</div>
+                        <div style="color: #7a1515;">2/1 Estrelas</div>
+                    </div>
+                </div>
+                <div class="central">Idade dos Clientes
+                    <div class="grafico">
+                        <div class="barra" style="width: 67%;background-color: var(--vrd);"></div>
+                        <div class="barra" style="width: 53%; background-color: #398635;"></div>
+                        <div class="barra" style="width: 62%; background-color: #4b157a;"></div>
+                        <div class="barra" style="width: 75%; background-color: #7a1515;"></div>
+                    </div>
+                    <div class="legenda">
+                        <div style="color: var(--vrd);">18-30 Anos</div>
+                        <div style="color: #398635;">30-40</div>
+                        <div style="color: #4b157a;">40-50</div>
+                        <div style="color: #7a1515;">60-80 Anos</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+</body>
+</html>

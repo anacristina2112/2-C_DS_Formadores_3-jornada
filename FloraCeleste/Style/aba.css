@@ -1,0 +1,616 @@
+.card {
+    position: relative;
+    width: 14.875em;
+    height: 20.5em;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.2em;
+    padding-bottom: 3.4em;
+  }
+  
+  .card::after {
+    content: "Adicione ao carrinho";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: var(--vrd);
+    color: #fff;
+    height: 2.5em;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  
+  .card .title {
+    font-family: corm;
+    font-size: 1em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .card .price {
+    font-family: corm;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: var(--vrd);
+    font-weight: 800;
+  }
+  
+  .card:hover::after {
+    bottom: 0;
+    opacity: 1;
+  }
+
+  
+  .imgcart {
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+.produtoscart{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    
+}
+.produtoscart div{
+    margin: 8px;
+}
+.itempag{
+  padding: 5vw;
+  display: flex;
+}
+.itemimag{
+  width: 500px;
+}
+.itemimgpqn{
+  display: grid;
+  padding: 1vw;
+}
+.imgpqn{
+  width: 50px;
+  padding: 1vw 0vw;
+  cursor: pointer;
+}
+.itdesc{
+  background-color: var(--branco);
+  padding: 5vw;
+}
+.itd{
+  font-size: 40px;
+  line-height: 100px;
+}
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--cinza);
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+.naval{
+font-size: 30px;
+padding-right: 1vw;
+}
+.txtit{
+  font-size: 20px;
+  color: #6D6D6D;
+  padding: 1vw;
+}
+.itaval{
+  display: inline-flex;
+  text-align: justify;
+}
+.indsec{
+  width: 300px; 
+  padding: 2.08vw;
+}
+
+.indprod{
+  justify-items: center;
+  text-align: center;
+}
+.slide {
+  vertical-align: middle;
+
+}
+.txtserv{
+  padding: 1vw;
+  text-align: center;
+  color: var(--cinza);
+  margin: 2vw;
+}
+.titserv{
+  font-size: 50px;
+  font-weight: bold;
+}
+.pgserv{
+  font-size: 30px;
+  font-weight: 500;
+}
+.serv{
+  justify-content: center;
+  text-align: center}
+.servimg{
+  width: 450px;
+  padding: 2vw;
+}
+.taman{
+  border: none;
+  background-color: #EDEDED;
+  border-radius: 20px;
+  width: 110px;
+  padding: 0.5vw;
+  font-size: 20px;
+}
+.taman::placeholder{
+  color:#6D6D6D;
+  font-size: 20px;
+}
+.addcar{
+  border-radius: 25px;
+  border: none 20px;
+  background-color: var(--cinza);
+  color: var(--branco);
+  align-items: center;
+  display: flex;
+  font-family: corm;
+  padding: 0.5vw;
+  
+}
+.CartBtn {
+  width: 140px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--cinza);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .5s;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px gainsboro;
+  position: relative;
+}
+button {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: #1F2937;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  cursor: pointer;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0.6em;
+  margin-top: -0.25em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+.label {
+  position: relative;
+  top: -1px;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: var(--vrd);
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+  width: 14em;
+  height: 14em;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+.IconContainer {
+  position: absolute;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .5s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(17, 17, 17);
+  z-index: 1;
+  transition-duration: .5s;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.CartBtn:hover .IconContainer {
+  transform: translateX(58px);
+  border-radius: 40px;
+  transition-duration: .5s;
+}
+
+.CartBtn:hover .text {
+  transform: translate(10px,0px);
+  transition-duration: .5s;
+}
+
+.CartBtn:active {
+  transform: scale(0.95);
+  transition-duration: .5s;
+}
+.addcar {
+  border-radius: 15px;
+  font-weight: bold;
+  transition: .4s ease-in-out;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.2);
+  letter-spacing: 0.2em;
+  border: none;
+}
+
+.addcar:hover {
+  letter-spacing: 0.5em;
+  transform: translateY(-0.8em);
+  background: #171717;
+  color: white;
+}
+
+.addcar:active {
+  letter-spacing: 0.4em;
+  transition: 0.1s all;
+  transform: translateY(-0.6em);
+  background: #171717;
+  color: white;
+}
+.addcar img{
+  height: 35px;
+  padding-right: 10px;
+}
+.comp{
+  padding-top: 30px;
+  text-align: justify;
+  display: flex;
+
+}
+.addcar:hover{
+ 
+  animation: normal;
+  
+  animation-delay: 1s;
+}
+.servtit{
+  font-size: 50px;
+  font-weight: bold;
+}
+.servprg{
+  font-size: 35px;
+  font-weight: 555;
+}
+.servform{
+  padding: 20px;
+  color: var(--branco);
+  font-size: 35px;
+  font-weight: 600;
+  background-color: var(--cinza);
+  border-radius:50px;
+  
+}
+.servform input{
+  border: none 10px;
+  border-radius: 20px;
+  font-size: 35px;
+  font-family: corm;
+  background-color: #909090;
+  color: #fff;
+}
+.sn{
+  padding: 100px;
+}
+.sob{
+  margin: auto;
+  text-align: center;
+  background-color: var(--cinza);
+  border-radius:50px;
+  padding: 50px;
+  color: var(--branco);
+  width: 60%;
+}
+.sntit{
+  font-size: 200%;
+  font-weight: bolder;
+}
+.sneq{
+  font-size: 180%;
+  font-weight: bold;
+}
+.sob p{
+  font-size: 150%;
+  font-weight: 800;
+}
+.mySlides {display: none;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 480px){
+  .sob{
+    width: 90%;
+    white-space: nowrap;
+    height: 600px;
+    margin: -30px;
+    font-size: small;
+    padding-left: 25%;
+  }
+  .sneq{
+    white-space: normal;
+  }
+}
+@media only screen and (max-width: 300px){
+  .text {font-size: 50px}
+}
+  .adm{
+    background: url(../Img/bges.png);
+    background-repeat: no-repeat;
+  background-size:cover;
+  }
+  .adm .vrd{
+    text-align: center;
+    margin:auto;
+    float: none;
+    display: flex;
+  }
+  .adm main{
+    padding: 5vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  .central{
+    background-color: var(--branco);
+    border-radius: 50px;
+    padding: 5vw;
+    font-size: 50px;
+    font-family: corm;
+    text-align: center;
+  }
+  .central h1{
+    font-weight: 1000;
+  }
+.ctrbot a{
+  padding: 20px;
+}
+.cbot{
+  border: none;
+  background-color: var(--cinza);
+  color: var(--branco);
+  font-family: corm;
+  font-size: 35px;
+  display: block;
+  font-weight: 600;
+  margin: auto;
+  padding: 1vw;
+  border-radius: 30px;
+  width: 500px;
+}
+.book{
+  font-size: medium;
+  display: block;
+}
+.book img{
+  width: 50px;
+}
+.book p {
+  align-self: center;
+  padding: 2vw;
+}
+.carrin{
+  background-color: #8494a4;
+  border-radius: 20px;
+  display: block;
+  padding: 2vw;
+  margin: 5em;
+}
+.carrin h1 {
+  color: var(--vrd);
+  font-size: 30px;
+  font-weight: 600;
+  display: inline;
+  padding: 1vw;
+  padding-bottom: 1.5vw;
+}
+.carritens{
+  display: flex;
+}
+.imgitem{
+  width: 20%;
+}
+.carditem{
+  background-color: var(--branco);
+  padding: 1vw;
+  padding-top: 0.5vw;
+  padding-bottom: 2vw;
+  margin: 4vw;
+  width: 45%;
+  display: flex;
+  font-size: 20px;
+  color:var(--cinza);
+  font-weight: 500;
+}
+.carditem img {
+  height: 5em;
+}
+.cardesc{
+  padding: 1em;
+}
+.carnome{
+  font-weight: 600;
+  color: #3c484db3;
+}
+.carpreco{
+  font-weight: bolder;
+  color: black;
+}
+.compra{
+  display: flex;
+  vertical-align: middle;
+  font-size: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+.valor{
+  background-color: var(--branco);
+  color: var(--cinza);
+  border-radius: 10px;
+  margin: 5px;
+  margin-right: 20%;
+  font-weight: bolder;
+  padding: 1vw;
+}
+.fimcompra{
+  background-color: var(--cinza);
+  color:var(--branco);
+  border-radius: 10px;
+  font-family: corm;
+  font-size: 25px;
+  cursor: pointer;
+}
+.fimcompra:hover{
+  background-color: #5d6d74b5;
+}
+@media  (max-width: 950px) {
+  .imgitem{
+    width: 45%;
+  }
+  .carrin{
+    width: 80%;
+    margin: 40px;
+  }
+  .carnome{
+    margin-left: -10px;
+    font-size: medium;
+  }
+  .carpreco{
+    margin-left: -10px;
+    font-size: medium;
+  }
+  .valor{
+    font-size: large;
+  }
+  .fimcompra{
+    font-size: large;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>FloraCeleste - Login</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Style/reset.css">
+        <link rel="stylesheet" href="Style/login.css"> 
+        <link rel="shortcut icon" href="./Img/logo.ico" type="image/x-icon">
+    </head>
+    <body>
+        <main><!--Meio-->
+            <section class="box">
+                <form>
+                    <fieldset action="index.html">
+                        <legend>LOGIN<img src="Img/logoesc.svg" class="logo" ></legend>
+                        <br>
+                        <br>
+                        <section class="inputBox">
+                            <input type="text" name="email" id="email" class="inputUser" required>
+                            <label for="email" class="labelinput">E-mail:</label>
+                        </section>
+                        <br><br><br>
+                        <section class="inputBox">
+                            <input type="password" name="senha"  id="senha" class="inputUser" required>
+                            <label for="senha" class="labelinput">Senha:</label>
+                        </section>
+                        <nav class="esqueci">
+                            <ul>
+                            <li><a href="cadastro.html">Esqueci a senha</a></li>
+                            </ul>
+                        </nav>
+                        <br><br><br>
+                        
+                        <button class="enviar" onclick="verificarEmail()" >Login</button>
+                                                <script>
+                            function verificarEmail() {
+                            var email = document.getElementById("email").value;
+                            if (email === "desenvolvedor@floraceleste.com") {
+                            window.open("Central/central.html");
+                            window.close
+                            } else {
+                            window.open("index.html");
+                            window.close()
+                            }}</script>
+                        <p>ou</p>
+                        <div id="logcontainer">
+                                <div class="log"><img class="google" src="Img/icons8-google-logo-48 1.png"></div>
+                                <div class="log"><img class="facebook" src="Img/icons8-facebook-novo-48 1.png"></div>
+                        </div>
+                        <nav class="cadastre">
+                            <ul>
+                                <li>Não tem conta? <a href="cadastro.html"><u>Cadastre-se</u></a></li>
+                            </ul>
+                        </nav>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </body>
+
+</html>

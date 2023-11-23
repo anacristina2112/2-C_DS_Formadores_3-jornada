@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --cor-primaria: #dadada;
+    --cor-secundaria: #212F70;
+    --cor-fundo: #9FD1FF;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--cor-primaria);
+}
+
+.carrinho{
+    width: 400px;
+    height: min-content;
+    background: var(--cor-fundo);
+    padding: 35px;
+    border-radius: 50px ;
+    border: #212F70 3px solid;
+}
+
+.carrinho .cabeçalho-carrinho{
+    display: flex;
+
+}
+.carrinho .cabeçalho-carrinho button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    background: #212F70;
+    border-radius: 8px;
+    line-height: 50%;
+}
+
+.carrinho .cabeçalho-carrinho button:hover{
+    color: black;
+    background: #71b7f8;
+    border-color: var(--cor-primaria);
+}
+
+.carrinho .cabeçalho-carrinho h3{
+    margin: auto;
+    text-align: center;
+    font-size: 34px;
+    color: black;
+}
+
+.carrinho .carrinho-item{
+    background: #fff;
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px pink;
+    display: flex;
+}
+
+.carrinho .cabeçalho-item .imagem{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.carrinho .carrinho-item img{
+    width: 90%; 
+}
+
+.carrinho .carrinho-item .info{
+    width: 70%;
+    padding: 14px;
+}
+
+.carrinho .carrinho-item h4{
+    color: black;
+    font-size: 17px;
+}
+
+.carrinho .carrinho-item .detalhes{
+    display: flex;
+    gap: 10px;
+}
+
+.carrinho .carrinho-item .detalhes i{
+    font-size: 15px;
+    color: black;
+    transform: translateY(3px);
+}
+
+.carrinho .carrinho-item .detalhes span {
+    font-size: 16px;
+    color: black;
+}
+
+.carrinho .carrinho-item .preco {
+    color: black;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.carrinho .carrinho-item .contador {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+
+.carrinho .carrinho-item .contador i{
+    cursor: pointer;
+    width: 25px;
+    height: 35px;
+    background: var(--cor-secundaria);
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 8px 8px 0 0;
+}
+
+.carrinho .carrinho-item .contador span{
+    margin: 0 6px;
+    color: var(--cor-secundaria);
+    font-size: 12px;
+}
+
+.carrinho .pagar{
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    color: black;
+    background-color: #212F70;
+    padding: 15px 0 ;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.carrinho .pagar:hover{
+    background: #71b7f8;
+}

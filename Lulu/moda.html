@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/interface.css">
+    <link rel="stylesheet" href="styles/moda.css">
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="styles/store.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Borel&family=Lobster&family=Work+Sans&display=swap');
+    </style>
+    <title>Lulu</title>
+  </head>
+  <body>
+   <header class="header-flex">
+      <div class="subheader-flex">
+        <div class="header-title">
+          <a class="header-link" href="/">
+            <span class="header-title-text">Lulu</span>
+          </a>
+        </div>
+        <div class="header-menu-container">
+          <ul class="header-menu-ul">
+            <li class="header-menu-li">
+              <button class="header-menu-button">
+                <span class="header-menu-option">STORE</span>
+              </button>
+            </li>
+            <li class="header-menu-li">
+              <button class="header-menu-button">
+                <span class="header-menu-option">NOVIDADES</span>
+              </button>
+            </li>
+            <li class="header-menu-li">
+              <button class="header-menu-button">
+                <span class="header-menu-option">SOBRE NÓS</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-menu-mobile">
+        <button class="header-menu-toggle" id="header-button-profile">
+          <img class="header-menu-toggle-image" src="assets/profile.svg">
+        </button>
+        <button class="header-menu-toggle" id="header-button-search">
+          <img class="header-menu-toggle-image" src="assets/search.svg">
+        </button>
+        <button class="header-menu-toggle" id="header-button-favorite">
+          <img class="header-menu-toggle-image" src="assets/favorite.svg">
+        </button>
+        <button class="header-menu-toggle" id="header-button-bag">
+          <img class="header-menu-toggle-image" src="assets/bag.svg">
+        </button>
+        <button class="header-menu-toggle" id="header-button-menu">
+          <img class="header-menu-toggle-image" src="assets/menu.svg">
+        </button>
+      </div>
+    </header>
+    <!-- Menu lateral -->
+    <div class="interface-container">
+      <div class="interface-mobile-menu" id="interface-mobile-menu">
+        <div class="interface-mobile-menu-header">
+          <button class="interface-mobile-menu-button" id="interface-mobile-menu-close">
+            <img class="interface-mobile-menu-image" src="assets/close.svg">
+          </button>
+        </div>
+        <div class="interface-mobile-menu-body">  
+          <div class="interface-mobile-menu-separator">
+            <span class="interface-mobile-menu-item">STORE</span>
+            <img class="interface-mobile-menu-image" src="assets/chevron_right.svg">
+          </div>
+          <div class="interface-mobile-menu-separator">
+            <span class="interface-mobile-menu-item">NOVIDADES</span>
+            <img class="interface-mobile-menu-image" src="assets/chevron_right.svg">
+          </div>
+          <div class="interface-mobile-menu-separator">
+            <span class="interface-mobile-menu-item">SOBRE NÓS</span>
+          </div>
+          <div class="interface-mobile-menu-list">
+            <div class="interface-mobile-menu-list-separator">
+              <img class="interface-mobile-menu-list-image" src="assets/profile.svg">
+              <span class="interface-mobile-menu-list-item">Entrar</span>
+            </div>
+            <div class="interface-mobile-menu-list-separator">
+              <img class="interface-mobile-menu-list-image" src="assets/favorite.svg">
+              <span class="interface-mobile-menu-list-item">Lista de Desejos</span>
+            </div>
+            <div class="interface-mobile-menu-list-separator">
+              <img class="interface-mobile-menu-list-image" src="assets/bag.svg">
+              <span class="interface-mobile-menu-list-item">Carrinho</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu Store -->
+    <div class="interface-container">
+      <div class="interface-mobile-menu" id="interface-mobile-menu-store">
+        <div class="interface-mobile-menu-header">
+          <button class="interface-mobile-menu-button" id="interface-mobile-menu-store-close">
+            <img class="interface-mobile-menu-image" src="assets/close.svg">
+          </button>
+        </div>
+        <div class="interface-mobile-menu-body">
+          <div class="interface-mobile-menu-separator">
+            <span class="interface-mobile-menu-item">Moda</span>
+            <img class="interface-mobile-menu-image" src="assets/chevron_right.svg">
+          </div>
+          <div class="interface-mobile-menu-separator">
+            <span class="interface-mobile-menu-item">Joalheria</span>
+            <img class="interface-mobile-menu-image" src="assets/chevron_right.svg">
+          </div>
+          <div class="interface-mobile-menu-separator">
+            <span class="interface-mobile-menu-item">Perfumes</span>
+            <img class="interface-mobile-menu-image" src="assets/chevron_right.svg">
+          </div>
+          <div class="interface-mobile-menu-separator">
+            <span class="interface-mobile-menu-item">Cosméticos</span>
+            <img class="interface-mobile-menu-image" src="assets/chevron_right.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile search -->
+    <div class="interface-container-search" id="interface-container-search">
+      <div class="interface-mobile-search" id="interface-mobile-search">
+        <div class="interface-mobile-search-header">
+          <div class="interface-mobile-search-box">
+            <img class="interface-mobile-search-icon" src="assets/search.svg">
+          </div>
+          <button class="interface-mobile-search-button" id="interface-mobile-search-close">
+            <span class="interface-mobile-search-close">FECHAR</span>
+          </button>
+        </div>
+      </div>
+    </div>
+<div class="main-invisi">
+  <div class="main-video-container">
+    <div class="main-collections-container" id="main-collections-container">
+      <div class="main-collections-separator">
+        <a class="main-collections-button">Moda</a> 
+      </div>
+      <div class="main-collections-separator">
+        <a class="main-collections-button">Joalheria</a>
+      </div>
+      <div class="main-collections-separator">  
+        <a class="main-collections-button">Perfumes</a>
+      </div>
+      <div class="main-collections-separator">
+        <a class="main-collections-button">Cosméticos</a>
+      </div>
+    </div>
+    <!--div class="main-video-label-container">
+      <span class="main-video-label" style="font-style: italic">URBAN</span>
+  </div-->
+    <img src="assets/example/1002.png" class="main-video mv-rearrange">
+  </div>
+  <main class="main-flex main-flex-store" id="main-flex">
+    <!--div class="main-coll-container"><div class="main-coll-button"><span class="main-coll-label">Coleção Black&White</span><img src="assets/plus.svg" class="main-coll-icon"></div><div class="main-coll-content"> eu amo te </div></div><div class="main-coll-container"><div class="main-coll-button"><span class="main-coll-label">Coleção Verão 2023</span><img src="assets/plus.svg" class="main-coll-icon"></div><div class="main-coll-content"> eu amo te </div></div-->
+  </main>
+</div>
+<!--div class="footer-invisi"></div-->
+<footer class="footer">
+  <div class="footer-container">
+    <span class="footer-title">Lulu</span>
+    <div class="footer-separator">
+      <span class="footer-separator-label">Atendimento ao cliente</span>
+      <span class="footer-separator-link">Fale Conosco</span>
+      <span class="footer-separator-link">FAQ</span>
+    </div>
+    <div class="footer-separator">
+      <span class="footer-separator-label">Termos e condições legais</span>
+      <span class="footer-separator-link">Política de privacidade</span>
+      <span class="footer-separator-link">Política de cookies</span>
+      <span class="footer-separator-link">Termos de venda</span>
+    </div>
+    <div class="footer-separator j-center">
+      <img class="footer-separator-image" src="assets/example/instagram_icon.png">
+    </div>
+  </div>
+  <div class="footer-ml-container">
+    <span class="footer-ml-label">AVISO LEGAL</span>
+    <span class="footer-ml-text">
+    A Lulu deseja esclarecer que não detém qualquer propriedade sobre as imagens e textos apresentados em suas páginas. Todas as imagens e textos exibidos são estritamente fictícios e são utilizados apenas para fins ilustrativos e de entretenimento.
+    <br>
+    Nenhuma das imagens ou textos presentes neste site foi produzida ou criada pelos administradores ou proprietários da Lulu.   Todas as imagens utilizadas foram obtidas através de fontes públicas e disponíveis na internet, e os textos são meramente fictícios, não representando a opinião ou a realidade de qualquer entidade ou indivíduo.
+    <br>
+    A Lulu respeita integralmente os direitos autorais e propriedade intelectual de terceiros. Se você é o detentor dos direitos autorais de alguma imagem ou texto exibido neste site e deseja que ela seja removida, por favor, entre em contato conosco para que possamos tomar as medidas necessárias.
+    <br>
+    Este aviso legal tem como objetivo esclarecer nossa política em relação à propriedade de conteúdo e reforçar nosso compromisso com a ética e a legalidade na utilização de materiais na internet.
+    <br><br>
+    <b>Atenciosamente, Lulu.</b>
+    <br>
+    lulubbrasil@gmail.com
+    </span>
+    <span style="color: black;">=</span>
+    <span style="color: black;">=</span>
+  </div>
+</footer>
+</body>
+</html>
