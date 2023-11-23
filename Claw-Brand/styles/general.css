@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+
+.pageContent {
+	min-height: 100vh;
+	position: relative;
+}
+
+#backgroundCorner2L {
+	height: 32em;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#backgroundCorner2R {
+	height: 32em;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+@media only screen and (max-width: 1260px) {
+	#backgroundCorner2L {
+		display: none;
+	}
+	#backgroundCorner2R {
+		display: none;
+	}
+}
+
+/*Search Bar*/
+
+.searchBar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.searchBar img {
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+}
+
+.searchBar form {
+	display: inline;
+}
+
+.searchBar form input {
+	width: 36em;
+	border: 10px solid #e7e9ee;
+	border-radius: 25px;
+	background-color: #e7e9ee;
+	text-align: center;
+}
+
+/*Highlight Category*/
+
+.highlightConteiner {
+	display: flex;
+	width: 100%;
+}
+
+#highlightHeader {
+	float: left;
+	display: flex;
+	align-items: center;
+}
+
+#highlightHeader img {
+	height: 4.5em;
+	margin: 0.5rem 1.5rem;
+}
+
+#highlightHeader h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 2.3em;
+	text-transform: uppercase;
+}
+
+#highlightLines {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	background-color: white;
+}
+
+#highlightLine1 {
+	border: 0.32em solid #627ea7;
+	margin: 0.5rem 0;
+	width: 90%;
+}
+
+#highlightLine2 {
+	border: 0.32em solid #131516;
+	margin: 0.5rem 0;
+	width: 96%;
+}
+
+@media only screen and (max-width: 720px) {
+	.searchBar form input {
+		width: 18em;
+	}
+}
+@media only screen and (max-width: 425px) {
+	#highlightLines {
+		display: none;
+	}
+}
+@media only screen and (max-width: 375px) {
+	#highlightHeader h1 {
+		font-size: 1.8em;
+	}
+}

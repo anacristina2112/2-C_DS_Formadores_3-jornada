@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Questrial&display=swap");
+
+#BackgroundCornerBL {
+	height: 18em;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -100;
+}
+#BackgroundCornerUR {
+	height: 18em;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -100;
+}
+
+.loginBox {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.loginBox img {
+	width: 36em;
+	margin-bottom: 2rem;
+}
+
+.loginBox p {
+	font-family: "Questrial", sans-serif;
+	font-size: 320%;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+#loginForm {
+	padding: 1rem;
+	background-color: #e8e8e8;
+	border: 6px solid #7a7979;
+	border-radius: 50px;
+}
+
+.formInput {
+	width: 40em;
+	text-align: center;
+	background-color: #979797;
+	padding: 0.8rem;
+	border: 1px solid #979797;
+	border-radius: 100px;
+	margin: 0.5rem;
+}
+::placeholder {
+	color: #c7c7c8;
+	opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder {
+	/* Edge 12 -18 */
+	color: #c7c7c8;
+}
+
+a {
+	text-decoration: none;
+	color: #008bff;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+#submitButton {
+	font-size: 140%;
+	color: #979797;
+	font-family: "Kufam", sans-serif;
+	border: 1px solid #979797;
+	border-radius: 100px;
+	background-color: #ffffff;
+	padding: 1.5rem;
+	padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+	#BackgroundCornerBL {
+		height: 12em;
+	}
+	#BackgroundCornerUR {
+		height: 12em;
+	}
+	.loginBox img {
+		width: 24em;
+		margin-bottom: 1rem;
+	}
+	.loginBox p {
+		font-size: 270%;
+		padding: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	#loginForm {
+		padding: 0.5rem;
+	}
+	.formInput {
+		width: 70vw;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#BackgroundCornerBL {
+		height: 10em;
+	}
+	#BackgroundCornerUR {
+		height: 10em;
+	}
+	.loginBox img {
+		width: 98vw;
+		margin-bottom: 1rem;
+	}
+	.loginBox p {
+		font-size: 220%;
+		padding: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	#loginForm {
+		padding: 1.4rem 0.2rem;
+	}
+	.formInput {
+		width: 90vw;
+	}
+}

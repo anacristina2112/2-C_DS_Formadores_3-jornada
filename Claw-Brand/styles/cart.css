@@ -1,0 +1,146 @@
+.backgroundCornersL {
+	position: absolute;
+	top: 38%;
+	z-index: -100;
+	left: -1vw;
+}
+.backgroundCornersR {
+	position: absolute;
+	right: 0;
+	top: 38%;
+	z-index: -100;
+}
+.backgroundCorner3 {
+	height: 6vw;
+	margin-bottom: 6em;
+}
+
+.topBar {
+	margin: 1rem;
+}
+
+#closeIcon {
+	float: right;
+	cursor: pointer;
+}
+
+.infoLabelBox {
+	margin-left: 1rem;
+}
+
+.orderMenu {
+	display: flex;
+	width: fit-content;
+	margin-left: 1rem;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+}
+
+.cartConteiner {
+	padding: 1rem 2rem;
+}
+
+.productBox {
+	background-color: #e8e8e8;
+	margin-bottom: 1.5rem;
+	padding: 0.8rem;
+	border-radius: 10px;
+	display: flex;
+	align-items: flex-start;
+}
+
+#productImage {
+	height: 8em;
+	width: 8em;
+	margin: 0 1rem;
+	background-color: white;
+	padding: 0.4rem;
+	border-radius: 4px;
+}
+
+.attributesBox1 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 6em;
+	justify-content: space-between;
+}
+.attributesBox1 h1 {
+	font-weight: 400;
+	font-size: 140%;
+}
+
+.attributesBox2 {
+	margin: 0 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+.attributesBox2 h2 {
+	font-weight: bold;
+}
+
+.actionsBox {
+	min-width: fit-content;
+}
+.actionsBox img {
+	height: 1.8em;
+	width: 1.8em;
+	cursor: pointer;
+}
+
+.bottomConteiner {
+	display: flex;
+	align-items: center;
+	background-color: #c6c6c6;
+	height: 4em;
+}
+.bottomButton {
+	background-color: #87b1d4;
+	padding: 0.8rem;
+	min-width: 12em;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 0 2rem;
+}
+.bottomBack {
+	display: flex;
+	position: absolute;
+	right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.productBox {
+		flex-direction: column;
+	}
+	.attributesBox2 {
+		margin: 0;
+	}
+	.bottomButton {
+		padding: 0.6rem;
+		min-width: 6em;
+		margin: 0 0.4rem;
+	}
+	.bottomButton h1 {
+		font-size: 70%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.bottomButton {
+		padding: 0.6rem 0.4rem;
+		margin: 0 0.2rem;
+	}
+	.bottomButton h1 {
+		font-size: 66%;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.bottomButton {
+		padding: 0.6rem 0.2rem;
+	}
+	.bottomButton h1 {
+		font-size: 50%;
+	}
+}
